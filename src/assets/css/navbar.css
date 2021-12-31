@@ -1,0 +1,28 @@
+.navbar{
+    background-color: #ffffff;
+    position: sticky;
+    margin: 0;
+    box-shadow: 0 37px 37px -4px rgba(0, 0, 0, 0.02);
+    margin-bottom: 40px;
+}
+.nav {
+    display: flex;
+    top: -5px;
+    margin: 0;
+    height: 80px;
+}
+.nav .nav-item {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+}
+.logo{
+    height: 100%;
+    max-height: 80px;
+}
+.content{
+    min-height: 80vh;
+}
