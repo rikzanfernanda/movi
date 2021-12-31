@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import {Button, Checkbox, Form, Input, InputNumber, message} from "antd";
-import TextArea from "antd/lib/input/TextArea";
 import axios from "axios";
 import {Link, useHistory, useParams} from "react-router-dom";
 import Cookies from "js-cookie";

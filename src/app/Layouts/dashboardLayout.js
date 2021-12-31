@@ -8,7 +8,7 @@ import Cookies from "js-cookie";
 const menu = (
     <Menu>
         <Menu.Item key="0">
-            <a href="">Logout</a>
+            <Link to="">Logout</Link>
         </Menu.Item>
     </Menu>
 )
@@ -53,9 +53,9 @@ const DashboardLayout = (props) => {
                 <Layout>
                     <Header className="site-layout-sub-header-background" style={{padding: 0}}>
                         <Dropdown overlay={menu} trigger={['click']}>
-                            <a className="ant-dropdown-link btn-logout" onClick={logout}>
+                            <Link className="ant-dropdown-link btn-logout" onClick={logout}>
                                 {Cookies.get('name')} <DownOutlined/>
-                            </a>
+                            </Link>
                         </Dropdown>
                     </Header>
                     <Content style={{margin: '24px 16px 0'}}>

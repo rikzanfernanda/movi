@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {Link, useHistory} from "react-router-dom";
 import {EditFilled, DeleteFilled} from "@ant-design/icons";
@@ -25,7 +25,7 @@ const GameList = () => {
                 })
             })
 
-            if (isFilter){
+            if (isFilter) {
                 result = result.filter((item) => {
                     return item.genre.toLowerCase() === filter.genre.toLowerCase() ||
                         item.platform.toLowerCase() === filter.platform.toLowerCase() ||
@@ -145,8 +145,8 @@ const GameList = () => {
     const onFinish = (val) => {
         setFilter({
             ...val,
-            genre: val.genre ? val.genre: "",
-            platform: val.platform ? val.platform: "",
+            genre: val.genre ? val.genre : "",
+            platform: val.platform ? val.platform : "",
         })
         setIsFilter(true)
         setRefresh(true)
@@ -194,7 +194,7 @@ const GameList = () => {
                 </Form>
             </div>
 
-            <Divider />
+            <Divider/>
 
             <Row>
                 <Col span={12}>
